@@ -1,0 +1,23 @@
+FROM ubuntu:latest
+
+# Installare dipendenze di base
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    wget \
+    build-essential \
+    python3 \
+    python3-pip \
+    nodejs \
+    npm \
+    && rm -rf /var/lib/apt/lists/*
+
+# Impostare la directory di lavoro
+WORKDIR /workspace
+
+# Copiare il progetto
+COPY . .
+
+# Installare dipendenze del progetto (se necessarie)
+# RUN npm install
+# RUN pip3 install -r requirements.txt
