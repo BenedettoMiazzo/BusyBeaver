@@ -1,3 +1,35 @@
+# --- File di compilazione principali ---
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# --- Bibliografia e Indici ---
+*.bbl
+*.blg
+*.run.xml
+*-blx.bib
+*.idx
+*.ind
+*.ilg
+
+# --- File specifici (Beamer, Liste, Glossari) ---
+*.nav
+*.snm
+*.vrb
+*.lof
+*.lot
+*.glo
+*.ist
+
+# --- Cartelle temporanee e Backup ---
+_minted-*/
+*.bak
+*~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
